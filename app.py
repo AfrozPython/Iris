@@ -11,16 +11,16 @@ import streamlit as st
 
   
 # loading in the model to predict on the data
-pickle_in = open('C:/Users/Appu/Desktop/Streamlit Test/Best Code Streamlit/00. Test project/Project 1/classifier.pkl', 'rb')
+pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 # Image Upload
-Image_file = open('C:/Users/Appu/Desktop/Streamlit Test/Best Code Streamlit/00. Test project/Project 1/Iris.jpg', 'rb')
+Image_file = open('Iris.jpg', 'rb')
 Image_bytes = Image_file.read()
 st.image(Image_bytes,width=700)
 
 # Video Upload
-video_file = open("C:/Users/Appu/Desktop/Streamlit Test/Best Code Streamlit/00. Test project/Project 1/Iris.mp4", 'rb')
+video_file = open("Iris.mp4", 'rb')
 video_bytes = video_file.read()
 st.video(video_bytes)
 
